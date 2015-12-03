@@ -41,7 +41,7 @@ const Item = (props) => {
 };
 
 Item.defaultProps = {
-  buttonLabel: 'next',
+  buttonLabel: '',
   hideButton: false,
   itemStyle: {}
 };

@@ -252,7 +252,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 	Item.defaultProps = {
-	  buttonLabel: 'next',
+	  buttonLabel: '',
 	  hideButton: false,
 	  itemStyle: {}
 	};

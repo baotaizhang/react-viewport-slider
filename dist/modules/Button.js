@@ -15,7 +15,6 @@ var _react2 = _interopRequireDefault(_react);
 var Button = function Button(props) {
 
   var style = {
-    bottom: '50px',
     left: '50%',
     position: 'absolute',
     transform: 'translateX(-50%)',

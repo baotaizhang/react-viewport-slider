@@ -22,9 +22,9 @@ var _Paginator = require('./Paginator');
 
 var _Paginator2 = _interopRequireDefault(_Paginator);
 
-var _utilScrollToY = require('./util/scrollToY');
+var _scrollToY = require('scroll-to-y');
 
-var _utilScrollToY2 = _interopRequireDefault(_utilScrollToY);
+var _scrollToY2 = _interopRequireDefault(_scrollToY);
 
 var Slider = (function (_Component) {
   _inherits(Slider, _Component);
@@ -69,7 +69,7 @@ var Slider = (function (_Component) {
     this.setState({ activeIndex: index }, function () {
       if (scrollTo) {
         _this.isAnimating = true;
-        _utilScrollToY2['default'](_this.refs['slide-' + index].offsetTop, 500, 'easeInOutQuint', function () {
+        _scrollToY2['default'](_this.refs['slide-' + index].offsetTop, 500, 'easeInOutQuint', function () {
           _this.isAnimating = false;
         });
       }

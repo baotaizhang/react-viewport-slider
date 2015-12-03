@@ -14,12 +14,6 @@ var _react2 = _interopRequireDefault(_react);
 
 var Bullet = function Bullet(props) {
 
-  var style = {
-    display: 'block',
-    height: '20px',
-    width: '20px'
-  };
-
   var handleClick = function handleClick() {
     props.onClick(props.index, true);
   };
@@ -28,8 +22,7 @@ var Bullet = function Bullet(props) {
 
   return _react2['default'].createElement('a', { href: '#viewport-slide-' + props.index,
     className: classes,
-    onClick: handleClick,
-    style: style });
+    onClick: handleClick });
 };
 
 Bullet.propTypes = {
